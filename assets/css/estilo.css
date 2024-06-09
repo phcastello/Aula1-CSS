@@ -1,0 +1,171 @@
+/* formaçoes gerais*/
+*{
+
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #e6e6e6;
+}
+
+
+/* formataçoes gerais do layout*/
+.area_cabecalho{
+    background-color: #f7b600;
+    padding: 15px;
+    text-align: center;
+}
+
+#area_logo, #area_menu{
+    padding: 15px;
+}
+
+#area_principal{
+    width: 1520px;
+    margin: 0;
+    padding: 15px;   
+}
+
+#area_postagem{
+    width: 1000px;
+    float: left;   
+}
+
+#area_lateral{
+    width: 520px;
+    float: right;
+}
+
+.postagem{
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #ffff;
+}
+
+.conteudo_lateral{
+    background-color: #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.postagem_lateral{
+    font-size: 12px;
+    padding: 5px;
+    border-bottom: 5px dotted #3A2618;
+}
+
+#rodape{
+    text-align: center;
+    padding: 15px;
+    background-color: #ccc;
+    clear: both;
+}
+
+/* formatacao do menu */
+
+a{
+    color: #4469AC;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #268693;
+}
+
+.area_cabecalho a:visited{
+    color: #fff;
+    padding: 12px;
+}
+
+
+/* estilos gerais */
+
+h1{
+    color: #4e4e4e;
+    font-size: 150px;
+}
+
+h2{
+    color: #000942;
+    font-size: 35px;
+}
+
+.titulo3{
+    color: #565656;
+    background-color: #ccc;
+    padding: 15px;
+}
+
+.branco{
+    color: #fff;
+}
+
+.data_postagem{
+    font-size: 12px;
+    display: block;
+}
+
+.link-animadoH {
+    display: inline-block;
+    position: relative;
+    color: #4169E1;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 5px;
+    overflow: hidden;
+    transition: color 0.3s;
+}
+
+.link-animadoH::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, transparent, #f7b600, transparent);
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+}
+
+.link-animadoH:hover::before {
+    transform: translateX(100%);
+}
+
+.link-animadoH:hover {
+    color: #FF6347;
+}
+
+.link-animadoL {
+    display: inline-block;
+    position: relative;
+    color: #4169E1;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 5px;
+    overflow: hidden;
+    transition: color 0.3s;
+}
+
+.link-animadoL::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, transparent, #ccc, transparent);
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+}
+
+.link-animadoL:hover::before {
+    transform: translateX(100%);
+}
+
+.link-animadoL:hover {
+    color: #FF6347;
+}
